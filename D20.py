@@ -1,3 +1,5 @@
+# Rolls dice. Originally only rolled d20s (hence the name), but can roll any standard DND die. Can roll any number of dice, and allows a user to add a modifier for said dice
+
 import random
 
 def rollDie():
