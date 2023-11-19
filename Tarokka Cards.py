@@ -1,3 +1,5 @@
+# The Tarokka Deck, as used in Curse of Strahd and other Ravenloft campaigns. This only simulates the deck; for what the results mean, consult Curse of Strahd or van Richten's Guide to Ravenloft
+
 import random
 
 usedLow = []
