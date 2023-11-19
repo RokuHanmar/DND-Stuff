@@ -1,3 +1,5 @@
+# Program used to roll stats for a character. Rolls 4d6 and drops the lowest, returning the sum of the 3 remaining dice. It does this 6 times to create an array of scores
+
 import random
 
 def getRolls():
