@@ -1,3 +1,7 @@
+# Implementation for the Deck of Many Things
+# IMPORTANT: use of this code requires a text file named Previous Uses stored in the same directory as the program. This is to ensure the same card is never drawn twice. My Previous Uses file has not been 
+# provided, as it contains cards I have previously drawn and will therefore interfere with any cards drawn in a different campaign
+
 import random
 
 cards = ["Vizier\n", "Sun\n", "Moon\n", "Star\n", "Comet\n", "The Fates\n", "Throne\n", "Key\n", "Knight\n", "Gem\n", "Talons\n", "The Void\n", "Flames\n", "Skull\n", "Idiot\n", "Donjon\n", "Ruin\n", "Euryale\n", "Rogue\n", "Balance\n", "Fool\n", "Jester\n"]
