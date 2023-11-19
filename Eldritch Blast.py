@@ -1,3 +1,5 @@
+# Allows for fast casting of the Eldritch Blast cantrip. Simply change the variables starting at line 7 until they fit your character
+
 # Import libraries
 import random
 
