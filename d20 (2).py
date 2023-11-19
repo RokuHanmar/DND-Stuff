@@ -1,3 +1,5 @@
+# Rigged die for DM use only. d20s rolled with this program will never roll above 7
+
 import random
 
 def rollDie():
