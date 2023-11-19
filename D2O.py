@@ -1,3 +1,5 @@
+# Rigged die for DM use only. Will only roll natural 20s on any d20 rolled
+
 import random
 
 def rollDie():
