@@ -25,14 +25,15 @@ int getLowest(die1, die2) {
 return lowest;
 }
 
-def getLowestOfFour(die1, die2, die3, die4):
-    total = 0
-    pair1 = getLowest(die1, die2)
-    pair2 = getLowest(die3, die4)
-    lowest = getLowest(pair1, pair2)
-    total = die1 + die2 + die3 + die4 - lowest
-    print("Total: " + str(total) + "\n")
-    
+int getLowestOfFour(die1, die2, die3, die4) {
+    int total = 0;
+    int pair1 = getLowest(die1, die2);
+    int pair2 = getLowest(die3, die4);
+    int lowest = getLowest(pair1, pair2);
+    total = die1 + die2 + die3 + die4 - lowest;
+    printf("%s %d \n", "Total:", total);
+}
+
 def getAbilities():
     die1 = getRolls()
     print("die 1: " + str(die1))
