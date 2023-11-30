@@ -34,6 +34,7 @@ int main() {
         int lowest = getLowest(pair1, pair2);
         total = die1 + die2 + die3 + die4 - lowest;
         printf("%s %d \n", "Total:", total);
+        return total;
     }
 
     int getAbilities(){
