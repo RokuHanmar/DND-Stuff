@@ -19,9 +19,9 @@ int main() {
     int getLowest(die1, die2) {
         int lowest = 0;
         
-        if (die1 > die2) {
+        if (die1 < die2) {
             lowest = die1;
-        } else if (die2 > die1) {
+        } else if (die2 < die1) {
             lowest = die2;
         } else {
         lowest = die2;
@@ -60,7 +60,7 @@ int main() {
         return totalScore;
     }
 
-    for (int i = 0; i < 7; i++){
+    for (int i = 0; i < 6; i++){
         getAbilities();
         printf("\n");
     }
