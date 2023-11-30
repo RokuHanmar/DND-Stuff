@@ -27,7 +27,7 @@ int main() {
     return lowest;
     }
 
-    void getLowestOfFour(die1, die2, die3, die4) {
+    int getLowestOfFour(die1, die2, die3, die4) {
         int total = 0;
         int pair1 = getLowest(die1, die2);
         int pair2 = getLowest(die3, die4);
