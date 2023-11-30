@@ -38,18 +38,18 @@ int main() {
     }
 
     int getAbilities(){
-        int die1 = getRolls();
+        int die1 = roll();
         printf("%s%d\n", "die 1:", die1);
         
-        int die2 = getRolls();
+        int die2 = roll();
         printf("%s%d\n", "die 2:", die2);
         
 
-        int die3 = getRolls();
+        int die3 = roll();
         printf("%s%d\n", "die 3:", die3);
             
         
-        int die4 = getRolls();
+        int die4 = roll();
         printf("%s%d\n", "die 4:", die4);
         
         int totalScore = getLowestOfFour(die1, die2, die3, die4);
