@@ -54,5 +54,6 @@ int getAbilities(){
     return totalScore;
 }
 
-for i in range(6):
-    getAbilities()
+for (int i = 0; i < 6; i++){
+    getAbilities();
+}
