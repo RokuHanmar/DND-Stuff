@@ -10,6 +10,9 @@ int main() {
 
     int roll() {
         int d6 = rand() % 7;
+        while (d6 == 0) {
+        d6 = rand() % 7;
+        }
         return d6;
     }
 
@@ -57,8 +60,9 @@ int main() {
         return totalScore;
     }
 
-    for (int i = 0; i < 6; i++){
+    for (int i = 0; i < 7; i++){
         getAbilities();
+        printf("\n");
     }
 
     return 0;
