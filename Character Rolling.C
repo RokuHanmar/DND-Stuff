@@ -34,20 +34,25 @@ int getLowestOfFour(die1, die2, die3, die4) {
     printf("%s %d \n", "Total:", total);
 }
 
-def getAbilities():
-    die1 = getRolls()
-    print("die 1: " + str(die1))
+int getAbilities(){
+    int die1 = getRolls();
+    printf("%s%d\n", "die 1:", die1);
     
-    die2 = getRolls()
-    print("die 2: " + str(die2))
+    int die2 = getRolls();
+    printf("%s%d\n", "die 2:", die2);
     
-    die3 = getRolls()
-    print("die 3: " + str(die3))
+
+    int die3 = getRolls();
+    printf("%s%d\n", "die 3:", die3);
+        
     
-    die4 = getRolls()
-    print("die 4: " + str(die4))
+    int die4 = getRolls();
+    printf("%s%d\n", "die 4:", die4);
     
-    getLowestOfFour(die1, die2, die3, die4)
+    int totalScore = getLowestOfFour(die1, die2, die3, die4);
+
+    return totalScore;
+}
 
 for i in range(6):
     getAbilities()
