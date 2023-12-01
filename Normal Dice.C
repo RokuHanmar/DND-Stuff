@@ -29,13 +29,15 @@ int main() {
     scanf("%d", &numberOfDice);
 
     // Roll dice
+    sides++; // This ensures the rand() function utilises the correct numbers
     for (int i = 0; i < (numberOfDice)+1;i++) {
-        int roll = rand() % (sides+1);
+        int roll = rand() % sides;
         while (roll == 0) {
-            roll = rand() % (sides+1);
+            roll = rand() % sides;
         }
-        printf("%s\n", "Die", i, "before modifiers:", roll);
-        printf("%s\n", "Die", i, "after modifiers:", (roll + modifier));
+        int modifiedRoll = roll + modifier;
+        printf("%s %d %s %d \n", "Die", i, "before modifiers:", roll);
+        printf("%s %d %s %d \n", "Die", i, "after modifiers:", modifiedRoll);
     }
 
 
