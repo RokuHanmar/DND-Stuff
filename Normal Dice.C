@@ -28,7 +28,15 @@ int main() {
     int numberOfDice;
     scanf("%d", &numberOfDice);
 
-
+    // Roll dice
+    for (int i = 0; i < (numberOfDice)+1;i++) {
+        int roll = rand() % (sides+1);
+        while (roll == 0) {
+            roll = rand() % (sides+1);
+        }
+        printf("%s\n", "Die", i, "before modifiers:", roll);
+        printf("%s\n", "Die", i, "after modifiers:", (roll + modifier));
+    }
 
 
 
