@@ -12,15 +12,21 @@ int main() {
 
     // Verify valid die
     while (sides != 2 && sides != 3 && sides != 4 && sides != 6 && sides != 8 && sides != 10 && sides != 12 && sides != 20 && sides != 100) {
-    printf("%d\n", ". Invalid. Enter the number of sides: ");
-    scanf("%d", &sides);
+        printf("%d\n", ". Invalid. Enter the number of sides: ");
+        scanf("%d", &sides);
     }
+
 
     // Get modifiers
     printf("%d\n", "Enter modifier. If there are none, enter 0: ");
     int modifier;
-    scanf("%d", modifier);
+    scanf("%d", &modifier);
 
+
+    // Get number of dice
+    printf("%d\n", "Enter number of dice: ");
+    int numberOfDice;
+    scanf("%d", &numberOfDice);
 
 
 
