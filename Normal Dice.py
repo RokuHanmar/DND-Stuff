@@ -10,18 +10,9 @@ def rollDie():
         print("Invalid number. Try again")
         die = int(input("Enter the number of sides: "))
 
-    areModifiers = input("Are there modifiers? ")
-    while areModifiers.lower() != "yes" and areModifiers.lower() != "no":
-        print("Invalid answer. Try again")
-        areModifiers = input("Are there modifiers? ")
-            
-    if areModifiers.lower() == "yes":
+        # add a modifier - set to 0 if there is no modifier
         modifier = int(input("What is the modifier? "))
-        areMods = True
-    else:
-        modifier = 0
-        areMods = False
-        
+    
     #Get the number of dice
     number = int(input("How many dice are you rolling? "))
     while number < 1:
@@ -33,11 +24,8 @@ def rollDie():
     for i in range(number):
         roll = random.randint(1, die)
         modifiedRoll = roll + modifier
-        if areMods == True:
             print("Die", str(i + 1) + " (without modifiers):", str(roll) + "\n")
             print("Die", str(i + 1) + " (with modifiers):", str(modifiedRoll) + "\n")
-        else:
-            print("Die", str(i+1) + ":", str(roll) + "\n")
         total += modifiedRoll
     print("Total: " + str(total))
 
