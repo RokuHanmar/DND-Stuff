@@ -4,21 +4,17 @@ import random
 
 def rollDie():
 
+    modifier = 0
+    
     #Get the type of die
     die = int(input("Enter the number of sides: "))
     while die != 4 and die != 6 and die != 8 and die != 10 and die != 12 and die != 20 and die != 100:
         print("Invalid number. Try again")
         die = int(input("Enter the number of sides: "))
 
-    areModifiers = input("Are there modifiers? ")
-    while areModifiers.lower() != "yes" and areModifiers.lower() != "no":
-        print("Invalid answer. Try again")
-        areModifiers = input("Are there modifiers? ")
-            
-    if areModifiers.lower() == "yes":
-        modifier = int(input("What is the modifier? "))
-    else:
-        modifier = 0
+     # Add the modifier - enter 0 if no modifier   
+    modifier = int(input("What is the modifier? "))
+    
         
     #Get the number of dice
     number = int(input("How many dice are you rolling? "))
