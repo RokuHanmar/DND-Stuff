@@ -24,9 +24,10 @@ def rollDie():
     for i in range(number):
         roll = random.randint(1, die)
         modifiedRoll = roll + modifier
-            print("Die", str(i + 1) + " (without modifiers):", str(roll) + "\n")
-            print("Die", str(i + 1) + " (with modifiers):", str(modifiedRoll) + "\n")
+        print("Die", str(i + 1) + " (without modifiers):", str(roll) + "\n")
+        print("Die", str(i + 1) + " (with modifiers):", str(modifiedRoll) + "\n")
         total += modifiedRoll
     print("Total: " + str(total))
 
 rollDie()
+
